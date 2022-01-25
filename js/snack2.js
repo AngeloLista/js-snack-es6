@@ -32,3 +32,15 @@ for (let i = 0; i < teams.length; i++) {
     team.points = getRandomNumber(1, 100);
     team.fouls = getRandomNumber(1, 300);
 }
+
+const newArray = [];
+
+for (let i = 0; i < teams.length; i++) {
+    const team = teams[i];
+
+    const {name, fouls} = team;
+    newArray.push({name, fouls});
+    
+}
+
+console.log(newArray);
