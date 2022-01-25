@@ -27,3 +27,4 @@ for (let i = 0; i < bikes.length; i++) {
     if(bike.weight < lightestBike.weight) lightestBike = bike;
 }
 
+console.log(lightestBike);
