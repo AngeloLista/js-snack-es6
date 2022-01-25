@@ -23,3 +23,12 @@ const teams = [
         fouls: 0,
     },
 ]
+
+const getRandomNumber = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
+
+for (let i = 0; i < teams.length; i++) {
+    const team = teams[i];
+
+    team.points = getRandomNumber(1, 100);
+    team.fouls = getRandomNumber(1, 300);
+}
